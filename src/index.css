@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cosmic-black: #080B18;
+    --deep-space-blue: #101C3C;
+    --nebula-violet: #7767D8;
+    --starlight-blue: #B8D8FF;
+    --lunar-white: #F4F5FA;
+    --muted-silver: #A9B1C7;
+  }
+
+  body {
+    background-color: #080B18;
+    color: #F4F5FA;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080B18;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e294b;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7767D8;
+  }
+}
+
+/* Subtle glow and space backdrop utilities */
+.cosmic-surface {
+  background: rgba(16, 28, 60, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 216, 255, 0.1);
+}
+
+.cosmic-surface-hover:hover {
+  border-color: rgba(119, 103, 216, 0.35);
+  background: rgba(16, 28, 60, 0.65);
+}
+
+.text-starlight {
+  color: #B8D8FF;
+}
+
+.text-nebula {
+  color: #7767D8;
+}
+
+.text-silver {
+  color: #A9B1C7;
+}
+
+.text-lunar {
+  color: #F4F5FA;
+}
